@@ -2,10 +2,12 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,7 +41,7 @@ body {
 }
 
 .marketing {
-  color: #027BFF;
+  color: #027bff;
 }
 
 .header-tekst h1 {
@@ -65,14 +67,16 @@ body {
 
 .about-tekst {
   width: 30vw;
-  height: 75vh;
-  background-color: #027BFF;
+  height: auto;
+  background-color: #027bff;
   border-radius: 0 25px 25px 0;
   color: white;
   display: flex;
   align-items: center;
   justify-content: left;
   font-size: 21px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
 }
 
@@ -88,7 +92,7 @@ body {
 }
 
 .udtalelser a {
-  color: #027BFF;
+  color: #027bff;
   text-decoration: none;
 }
 
@@ -133,6 +137,13 @@ body {
 }
 
 /*------Cases------*/
+
+/*NYT*/
+.mobileCases {
+  display: none;
+}
+/*ny slut*/
+
 .caseContainer {
   position: relative;
   text-align: center;
@@ -157,7 +168,7 @@ body {
 }
 
 .caseOverlay hr {
-  background-color: #027BFF;
+  background-color: #027bff;
   border: none;
   width: 20%;
   height: 5px;
@@ -197,7 +208,7 @@ body {
 }
 
 .caseOverlayRight hr {
-  background-color: #027BFF;
+  background-color: #027bff;
   border: none;
   width: 20%;
   height: 5px;
@@ -241,7 +252,7 @@ body {
 }
 
 .fa-linkedin-in:hover {
-  color: #2867B2;
+  color: #2867b2;
   transition: 0.5s;
 }
 
@@ -262,8 +273,10 @@ body {
 /*----Kontakt------*/
 .kontakt-tekst {
   width: 30vw;
-  height: 75vh;
-  background-color: #027BFF;
+  height: auto;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #027bff;
   border-radius: 25px 0px 0px 25px;
   color: white;
   display: flex;
@@ -309,14 +322,14 @@ body {
 }
 
 .footer p {
-  color: #027BFF;
+  color: #027bff;
   text-align: center;
   font-size: 20px;
 }
 
 .footer a {
   text-decoration: none;
-  color: #027BFF;
+  color: #027bff;
 }
 
 /*-----nav-----*/
@@ -331,7 +344,7 @@ nav {
 
 nav p {
   font-size: 25px;
-  color: #027BFF;
+  color: #027bff;
 }
 
 .nav-left {
@@ -344,4 +357,101 @@ nav p {
   text-align: right;
   margin-top: auto;
   margin-bottom: auto;
+}
+@media (max-width: 1024.01px) {
+  .about-tekst {
+    margin-top: 1rem;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0px 25px 25px 0;
+  }
+  .about-tekst p {
+    font-size: 18px;
+  }
+  .kontakt-tekst {
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    border-radius: 25px 0 0 25px;
+  }
+  .kontaktinfo {
+    font-size: 18px;
+  }
+  .kontakt-t h1 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .header-image {
+    width: 100%;
+    height: auto;
+  }
+  .header-tekst h1 {
+    font-size: 2rem;
+  }
+  .about-i {
+    width: 70%;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-tekst {
+    margin-top: 1rem;
+    width: 80vw;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 25px 0 25px 0;
+  }
+  .about-tekst p {
+    font-size: 18px;
+  }
+  .caseContainer {
+    display: none;
+  }
+  .mobileCases {
+    display: contents;
+    text-align: center;
+  }
+  .mobileCasesImage {
+    width: 90%;
+    height: auto;
+  }
+  .mobileCasesIkoner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8rem;
+  }
+  .udtalelser {
+    margin-bottom: 6rem;
+  }
+  .mobileCasesHeader h1 {
+    font-size: 2rem;
+  }
+  .about-image-bottom {
+    display: none;
+  }
+
+  .kontakt-tekst {
+    margin-top: 1rem;
+    width: 80vw;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 25px 0 25px 0;
+  }
+  .kontaktinfo {
+    font-size: 18px;
+  }
+  .kontakt-t h1 {
+    font-size: 2.2rem;
+  }
 }
